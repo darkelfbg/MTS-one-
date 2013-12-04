@@ -1,0 +1,66 @@
+﻿@if (!Request.IsAuthenticated)
+{
+
+<div class="jumbotron">
+    <h2>Personal Entertainment Tracker</h2>
+    <p class="lead">Register to keep track with your entertainment</p>
+    <p>@Html.ActionLink("Click", "Register", "Account", null, new { @Class = "btn btn-primary btn-large" })</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Personal Entertainment Tracker will keep you up to date with you favorite TV shows, books or animes it can also keep
+            you up to date with new movie releases. 
+        </p>
+        </div>
+    <div class="col-md-4">
+        <h2>Simple to use</h2>
+        <p>Just add your favorite TV shows in your library. Check all the ones you watch and register for updates on any new episodes </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Need more coffee</h2>
+        <p>Out of ideas.</p>
+    </div>
+</div>
+    }
+else
+{
+
+<div id="mainContainer" class="padding">
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img data-src="holder.js/300x200" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img data-src="holder.js/300x200" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img data-src="holder.js/300x200" alt="...">
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+}

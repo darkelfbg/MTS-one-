@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNet.Identity
+@if (Request.IsAuthenticated)
+{
+<ul class="nav nav-tabs nav-justified">
+    <li class="active">@Html.ActionLink("User Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("Add TV Shows", "AddTVShows", "TVShows")</li>
+    <li>@Html.ActionLink("Add Movies", "AddMovies", "MOvies")</li> 
+    <li>@Html.ActionLink("Add Books", "AddBooks", "Books")</li>
+    <li>@Html.ActionLink("Add Animes", "AddAnimes", "Animes")</li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Your Library's <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>@Html.ActionLink("TVShows Library", "TVShowsLibrary", "TVShows")</li>
+            <li>@Html.ActionLink("Movies Library", "MOviesLibrary", "Movies")</li>  
+            <li>@Html.ActionLink("Books Library", "BooksLibrary", "Books")</li>
+            <li>@Html.ActionLink("Animes Libary", "AnimesLibrary", "Animes")</li>
+        </ul>
+
+    </li>
+</ul>
+}
